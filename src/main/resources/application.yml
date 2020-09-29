@@ -14,8 +14,8 @@ mybatis:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql///air?serverTimezone=UTC
-    user: root
+    url: jdbc:mysql://localhost:3306/air?serverTimezone=UTC
+    username: root
     password:
     type: com.alibaba.druid.pool.DruidDataSource
 

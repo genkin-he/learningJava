@@ -1,7 +1,10 @@
 package com.qf.firstspringboot.controller;
 
+import com.qf.firstspringboot.entity.Air;
 import com.qf.firstspringboot.entity.User;
+import com.qf.firstspringboot.mapper.AirMapper;
 import com.qf.firstspringboot.properties.AliyunProperties;
+import java.util.List;
 import javax.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -39,4 +42,13 @@ public class TestController {
   public AliyunProperties aliyun() {
     return properties;
   }
+
+  @Autowired
+  private AirMapper airMapper;
+
+  @GetMapping("air")
+  public List<Air> airMapper() {
+    return airMapper.findAll();
+  }
+
 }
