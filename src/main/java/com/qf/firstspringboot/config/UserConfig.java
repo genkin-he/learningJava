@@ -11,7 +11,7 @@ public class UserConfig {
   public User user() {
     User user = new User();
     user.setId(12);
-    user.setName("吴旭娟是个大笨蛋！");
+    user.setName("对双方都十分大！");
     return user;
   }
 }
